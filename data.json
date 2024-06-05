@@ -1,0 +1,55 @@
+{
+    "user": {
+        "fullName": "Mbhoni Khoza",
+        "photo": "./sweetbae(1)(1).jpg",
+        "back-image":"./cpt.jpg"
+    },
+    "city": {
+        "city": "Favourite city",
+        "name": "Maputo",
+        "photo": "./maputo.jpg",
+        "description": "In Maputo, Africa's beauty is everywhere. You see it in the colorful markets,where fabrics and foods are lively and bright. The city smells of roasted nuts and tasty dishes, making you want to try everything. But the real beauty is inhow people live they're strong and friendly, always there for each other. From the laughter in the streets to the drumming in the neighborhoods, Maputo tells stories of Africa's rich past and vibrant spirit."
+    },
+    "foreignLanguage": {
+        "language": "Portuguese",
+        "description": "Learning Portuguese is important for many reasons. It helps you talk with lots of people in Mozambique, Brazil, Portugal, and other places, making travel and friendships easier. Also, it lets you learn about the cool cultures of these countries, like their books, music, and movies. If you're looking for a job, knowing Portuguese can help in business or working with other countries. And learning a new language is good for your brain and helps you understand different cultures better. So, whether you want to travel, work, or just learn something new, Portuguese is a great language to learn!"
+    },
+    
+        "phrases": [
+            {
+                "englishPhrase": "English",
+                "foreignLanguage": "Portuguese"
+            },
+            {
+                "englishPhrase": "Good morning",
+                "foreignLanguage": "Bon dia"
+            },
+            {
+                "englishPhrase": "I miss you",
+                "foreignLanguage": "sinto sua falta"
+            },
+            {
+                "englishPhrase": "My sweet angel",
+                "foreignLanguage": "meu doce anjo"
+            }
+        ],
+    
+    "subjects1":{
+            "title": "Favourite Subjects",
+            "name": "Acounting",
+            "image": "accounting.png",
+            "description": "Accounting is the process of tracking and recording financial activity. People and businesses use the principles of accounting to assess their financial health and performance."
+        },
+
+       "subjects2": {
+            "name": "Calculus",
+            "image": "calculus.png",
+            "description": "Calculus is applied in many areas of life. It can be used to model systems where there is change. Examples of the applications of calculus in scientific fields are space exploration,"
+        },
+        "subjects3":{
+            "name": "engineering",
+            "image": "engineering.jpg",
+            "description": "Engineering is the application of science and maths to solve problems. While scientists and inventors come up with innovations, it is engineers who apply these discoveries to the real world."
+        }
+    
+}

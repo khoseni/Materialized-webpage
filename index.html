@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+
+</head>
+
+<body class="orange lighten-4">
+  <style>
+    .names {
+      background-image: url(cpt.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+
+
+
+  <!--into-->
+  <div class="container">
+    <section>
+      <div class="names">
+        <div class="row">
+          <div class="col l6 m6 s12">
+            <span class="light-green-text text-darken-1">
+              <h1 class="col s12 m8 18 center">{{user.fullName}}</h1>
+            </span>
+          </div>
+          <div class="col l6 m6 s12">
+            <img src="{{user.photo}}" class="col s12 m8 14 responsive-img" width="150">
+          </div>
+        </div>
+      </div>
+
+
+      <hr>
+    </section>
+
+    <!--favourite city-->
+    <section class="city">
+      <h1 class="center">{{city.name}}</h1>
+      <div class="row">
+        <img src="{{city.photo}}" alt="" width="250" class=" center col s12 m5 l5 responsive-img">
+        <p class=" col s12 m7 l7">
+          {{city.description}}
+        </p>
+      </div>
+      <hr>
+    </section>
+    <!--foreign language-->
+    <section>
+      <h1 class="center">{{foreignLanguage.language}}</h1>
+      <p>
+        {{foreignLanguage.description}}
+      </p>
+
+      <section class="">
+        <table class="striped center" width="80%">
+          <thead>
+            <tr>
+              <th>English</th>
+              <th>Portuguese</th>
+            </tr>
+          </thead>
+          {{#each phrases}}
+          <tr>
+            <td>{{englishPhrase}}</td>
+            <td>{{foreignLanguage}}</td>
+          </tr>
+          {{/each}}
+          <table>
+
+      </section>
+
+
+      <hr>
+    </section>
+
+    <!--favourite subjects-->
+    <section class=" ">
+      <div class="">
+        <h1 class="center">{{subjects1.title}}</h1>
+      </div>
+      <div class="row">
+        <div class="col s12 m4 l4">
+          <h3>{{subjects1.name}}</h3>
+          <div class="">
+            <p class="col s6 m6 l6 ">
+              {{subjects1.description}}
+            </p>
+            <img src="{{subjects1.image}}" class="col s6 m6 l6 responsive-img">
+
+          </div>
+        </div>
+
+
+        <div class="col s12 m4 l4">
+          <h3>{{subjects2.name}}</h3>
+          <div class="">
+            <p class="col s6 push-s6 m6 l6">
+              {{subjects2.description}}
+            </p>
+            <img src="{{subjects2.image}}" class="col s6 pull-s6 m6 l6 responsive-img ">
+          </div>
+        </div>
+
+        <div class="col s12 m4 l4">
+          <h3>{{subjects3.name}}</h3>
+          <div class="">
+
+            <p class="col s6 m6 l6">
+              {{subjects3.description}}
+            </p>
+            <img src="{{subjects3.image}}" alt="" class="col s6 m6 l6 responsive-img">
+          </div>
+
+        </div>
+      </div>
+      <hr>
+    </section>
+  </div>
+</body>
+
+</html>
