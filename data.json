@@ -37,18 +37,18 @@
     "subjects1":{
             "title": "Favourite Subjects",
             "name": "Acounting",
-            "image": "accounting.png",
+            "image": "./Accounting.png",
             "description": "Accounting is the process of tracking and recording financial activity. People and businesses use the principles of accounting to assess their financial health and performance."
         },
 
        "subjects2": {
             "name": "Calculus",
-            "image": "calculus.png",
+            "image": "./calculus.png",
             "description": "Calculus is applied in many areas of life. It can be used to model systems where there is change. Examples of the applications of calculus in scientific fields are space exploration,"
         },
         "subjects3":{
             "name": "engineering",
-            "image": "engineering.jpg",
+            "image": "./engineering.jpg",
             "description": "Engineering is the application of science and maths to solve problems. While scientists and inventors come up with innovations, it is engineers who apply these discoveries to the real world."
         }
     
