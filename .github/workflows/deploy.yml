@@ -1,0 +1,90 @@
+# Simple workflow for deploying static content to GitHub Pages
+name: Deploy static content to Pages
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ['main']
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets the GITHUB_TOKEN permissions to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment
+concurrency:
+  group: 'pages'
+  cancel-in-progress: true
+
+jobs:
+  # Single deploy job since we're just deploying
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Set up Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm install
+      - name: Build
+        run: npm run build
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          # Upload dist repository
+          path: './dist'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
+
+    Tools Setup overview
+    Tools Setup
+        Tools Setup Definition of Done
+        Install software on Windows 10
+        Install software on Ubuntu
+        Install software on MacOS
+        Mastering the command line
+        Git - Version Control
+        Git introduction workshop
+        VS Code text editor
+        Debugging and tools
+        Deploy FCC projects to GitHub Pages
+        Tools Setup Project Reflection
+    Demo Intro
+    Creating responsive web pages overview
+    Creating responsive web pages
+        Definition of done
+        Responsive Cat App
+        Pizza Pamphlet
+        Web Page Content
+        Creating a personal web page
+        A basic layout
+        How to create responsive web pages
+        Deploy your website
+        Project reflection
+    Algorithms with LogicShaper
+        Logic Shaper Project Reflection
+    Reponsive web pages with ViteJS & Handlebars
+        Overview of what you will learn & do
+        Handlebars templates with ViteJS
+        Handlebars basics
+        Creating a personal web pages using HandlebarsJS
+        Deployment
+    Unit testing with MochaJS
+        Definition of done
+        Test my bootcamp
+        Project reflection
+
